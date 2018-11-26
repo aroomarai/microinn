@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800');
+body {
+    overflow-x: hidden;
+    font-family: Open Sans !important;
+}
+/* 
+Default Variables 
+*/
+:root {
+    --site-primary: #ef4525;
+    --site-secondary: #f05c22; 
+    --site-success: #ce961a;
+    --site-danger: #d64c31;
+    --site-info: #2173bd;
+    --site-warning: #ebb744;
+    --white: #fff;
+    --dark: #454545;
+    --light: #aaa;
+}
+
+/* 
+For Navbar 
+*/
+
+.navbar {
+    background: var(--white);
+    padding: 20px 10px;
+    transition: .3s ease-in-out;
+}
+.navbar-nav > li {
+    margin: 0 10px;
+}
+.navbar-nav > li > a {
+    color: var(--dark) !important;
+    font-size: 14px;
+}
+.sticky-nav {
+    padding: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+/* 
+Default Buttons 
+*/
+
+.btn {
+    border-radius: 30px !important;
+    border: none !important;
+}
+.btn-primary {
+    background: var(--site-primary) !important;
+}
+.btn-secondary {
+    background: var(--site-secondary) !important;
+}
+.btn-success {
+    background: var(--site-success) !important;
+}
+.btn-info {
+    background: var(--site-info) !important;
+}
+.btn-warning {
+    background: var(--site-warning) !important;
+}
+
+/* 
+Hero image block 
+*/
+
+.img-block{
+    width: 100%;
+    margin-top: 100px;
+    /* padding: 50px 0; */
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    display: table;
+    /* border: 1px solid; */
+}
+.img-block .text-block {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.img-block .text-block .block-title {
+    font-size: 24px;
+}
+
+/* 
+info box 
+*/
+.feature-title {
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 22px;
+}
+.feature-dec {
+    color: var(--light);
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.info-box {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.info-box .info-box-icon {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+.info-box .info-box-icon img {
+    width: 60px;
+    height: 60px;
+}
+.info-box .info-box-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.info-box .info-box-description {
+    font-size: 12px;
+    text-align: center;
+    color: var(--light);
+}
+
+/* parallax */
+
+.parallax {
+    background-image: url("../images/img1.png");
+    min-height: 280px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    transform: scale(1.10);
+    display: table;
+    width: 100%;
+}
+.parallax .parallax-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    z-index: 10 !important;
+    position: relative;
+}
+.parallax .parallax-content:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    /* background: rgba(0,0,0,.6); */
+    text-align: center;
+}
+/* footer */
+.footer {
+    background: var(--white);
+    padding: 60px 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    background: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 800px;
+}
+.footer .footer-title {
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+.footer .footer-dec {
+    font-size: 12px;
+    color: #aaa;
+}
+.footer .footer-links {
+    margin: 0;
+    padding: 0;
+}
+.footer .footer-links li {
+    list-style: none;
+    margin: 8px 0;
+}
+.footer .footer-links li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footer .footer-links li a:hover {
+    color: var(--dark);
+    text-decoration: none;
+}
+.footer .footer-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 300px;
+    background: #ddd;
+    padding: 20px 30px;
+    border-radius: 0 60px 60px 0;
+    color: var(--site-primary);
+    font-size: 12px;
+    text-align: right;
+}
